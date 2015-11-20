@@ -6,25 +6,25 @@ import java.util.ArrayList;
 public class Automobil {
 
  private int Id;
- private String Name;
+ private String Nume;
 
   public Automobil() {}
 
-  public Automobil(int id, String name)
+  public Automobil(int id, String nume)
   {
       this.Id=id;
-      this.Name=name;
+      this.Nume=nume;
 
   }
 
-  public int getId()
+    public int getId()
   {
   return this.Id;
 
   }
 
 
-  public String getName(){
+  public String getNume(){
   return  this.Name;
 
   }
@@ -34,7 +34,7 @@ public class Automobil {
 	  this.Id=id;
   }
 
-  public void setName(String name){
-  this.Name=name;
+  public void setNume(String nume){
+  this.Nume=nume;
   }
 }
