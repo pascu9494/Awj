@@ -28,13 +28,14 @@ MarcaController()
        Marca a1=new Marca (1,"Audi","R7","2009");
        Marca a2=new Marca (2,"Bmw","i8","2010");
        Marca a3=new Marca (3,"Fiat","500","2011");
-
+	   Marca a4=new Marca (4,"Ford Focus","GT","2014");
+       Marca a5=new Marca (5,"Dacia","Logan","2005");
 
        Marca.add(a1);
        Marca.add(a2);
        Marca.add(a3);
-
-
+       Marca.add(a4)
+       Marca.add(a5)
 
      }
 
@@ -122,10 +123,10 @@ MarcaController()
 
      @RequestMapping(value="/Marca/", method = RequestMethod.POST)
   	 public ResponseEntity create() {
-	 Marca a4=new Marca(4,"v40","2006","Volvo");
-	 Marca.add(a4);
+	 Marca a6=new Marca(6,"v40","2006","Volvo");
+	 Marca.add(a6);
 
-     return new ResponseEntity<Marca>(a4, new HttpHeaders(), HttpStatus.OK);
+     return new ResponseEntity<Marca>(a6, new HttpHeaders(), HttpStatus.OK);
      }
 
 
