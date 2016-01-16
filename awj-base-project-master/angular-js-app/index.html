@@ -2,6 +2,16 @@
 <html ng-app="blog">
 <head>
   <title>My application</title>
+  </head>
+  <Body BGCOLOR="#00FFFF">
+  <FONT COLOR ="#00008B" SIZE="6">
+  </FONT><BR>
+  <HR COLOR="FF0000" WIDTH="25%" SIZE="5%" ALIGN="LEFT">
+  <BR>
+  <FONT COLOR="#008000">
+  </FONT>
+  <HR>
+  
   <link rel="stylesheet" media="all" href="css/bootstrap.min.css">
   <link rel="stylesheet" media="all" href="css/custom.css">
 </head>
@@ -23,7 +33,10 @@
           <ul class="nav navbar-nav">
             <li><a href="#">Resource 1</a></li>
             <li><a href="#">Resource 2</a></li>
+<<<<<<< HEAD
 			<li><a href="#">Resource 3</a></li>
+=======
+>>>>>>> 33fa58e6f2cd6549fe09fa1708cc178ce4aedd6c
           </ul>
         </div>
       </div>
@@ -34,12 +47,242 @@
 
   <div class="container">
     <div ng-controller="HomeController">
+<<<<<<< HEAD
       <h1>Project AWJ</h1>
       <p></p>
+=======
+      <h1>{{ helloWorld }}</h1>
+      <p>Writing this live into the browser...</p>
     </div>
   </div>
 
   <hr/>
+
+  <!-- /resources1 -->
+  <div class="container">
+    <h1>Marca</h1>
+    <h2>Listeaza Marca</h2>
+	
+    <table class="table table-bordered">
+      <tr>
+        <th>Id_Marca</th>
+        <th>Nume_Marca</th>
+        <th>Tipautomobil</th>
+        <th>An</th>
+        <th style="width:210px;">Options</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Audi</td>
+        <td>R7</td>
+		<td>2009</td>
+        
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+         <td>2</td>
+         <td>Bmw</td>
+         <td>i8</td>
+		 <td>2010</td>
+         
+		 <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td>Fiat</td>
+         <td>500</td>
+		 <td>2011</td>
+         <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+     <tr>
+        <td>4 </td>
+        <td>Ford Focus</td>
+        <td>GT</td>
+		<td>2014</td>
+        
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+         <td>5</td>
+         <td>Dacia</td>
+         <td>Logan</td>
+		 <td>2005</td>
+         
+		 <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+     
+      
+	 
+         
+      </tr>
+     
+	 
+    </table>
+
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Editeaza Marca</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">Id_Marca</label>
+            <input type="text" class="form-control" id="Id_Marca" placeholder="Id_Marca">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Nume_Marca</label>
+            <input type="text" class="form-control" id="Nume_Marca" placeholder="Nume_marca">
+          </div>
+          <div class="form-group">
+            <label for="attribute3">Tipautomobil</label>
+            <input type="text" class="form-control" id="Tipautomobil" placeholder="Tipautomobil">
+          </div>
+          <div class="form-group">
+            <label for="attribute4">An</label>
+            <input type="text" class="form-control" id="An" placeholder="An">
+          </div>
+          <button type="submit" class="btn btn-info">Save</button>
+        </form>
+      </div>
+
+
+      <div class="col-md-3 col-md-offset-6">
+        <h2>Adauga Marca </h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">Id_Marca</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Id_Marca">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Nume_Marca</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="Nume_Marca">
+          </div>
+          <div class="form-group">
+            <label for="attribute3">Tipautomobil</label>
+            <input type="text" class="form-control" id="attribute3" placeholder="Tipautomobil">
+          </div>
+          <div class="form-group">
+            <label for="attribute4">An</label>
+            <input type="text" class="form-control" id="attribute4" placeholder="An">
+          </div>
+          <button type="submit" class="btn btn-success">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Afiseaza Marca</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="http://www.magnatuning.ro/images/Ford-Focus-Capota-RS_thumb_12576__130_100.jpg" class="img-thumbnail"/>
+      </div>
+      <div class="col-md-10">
+        <p>Audi, R7,2009</p>
+        
+        <table class="table table-bordered table-striped">
+     
+          </tr>
+        </table>
+      </div>
+>>>>>>> 33fa58e6f2cd6549fe09fa1708cc178ce4aedd6c
+    </div>
+  </div>
+
+  <hr/>
+<<<<<<< HEAD
 
   <!-- /resources1 -->
   <div class="container">
@@ -300,6 +543,9 @@
         </td>
       </tr>
     </table>
+=======
+   
+>>>>>>> 33fa58e6f2cd6549fe09fa1708cc178ce4aedd6c
      
 	
 	 
@@ -307,6 +553,7 @@
   
   <!-- /resources2-->
   <div class="container">
+<<<<<<< HEAD
     <h1>Telefoane</h1>
     <h2>Listeaza Model</h2>
     <table class="table table-bordered">
@@ -323,6 +570,19 @@
 		<td>S5</td>
 		<td>2014</td>
 		
+=======
+    <h1>Culoarea</h1>
+    <h2>Afiseaza culoarea</h2>
+    <table class="Culoare">
+      <tr>
+        <th>Marca</th>
+        <th>Culoarea</th>
+        <th style="width:210px;">Options</th>
+      </tr>
+      <tr>
+        <td>Audi</td>
+        <td>Albastru</td>
+>>>>>>> 33fa58e6f2cd6549fe09fa1708cc178ce4aedd6c
         <td>
           <a href="">
             <span class="label label-success">
@@ -345,12 +605,17 @@
         </td>
       </tr>
       <tr>
+<<<<<<< HEAD
         <td>2</td>
         <td>Nokia</td>
 		<td>Lumia</td>
         <td>2011</td>
 		
         
+=======
+        <td>Dacia</td>
+        <td>Verde</td>
+>>>>>>> 33fa58e6f2cd6549fe09fa1708cc178ce4aedd6c
         <td>
           <a href="">
             <span class="label label-success">
@@ -373,10 +638,15 @@
         </td>
       </tr>
       <tr>
+<<<<<<< HEAD
         <td>3</td>
         <td>Htc</td>
 		<td>Desire</td>
         <td>2015</td>
+=======
+        <td>Fiat</td>
+        <td>gri</td>
+>>>>>>> 33fa58e6f2cd6549fe09fa1708cc178ce4aedd6c
         <td>
           <a href="">
             <span class="label label-success">
@@ -399,10 +669,15 @@
         </td>
       </tr>
       <tr>
+<<<<<<< HEAD
         <td>4</td>
         <td>Alcatel</td>
 		<td>M100</td>
         <td>2005</td>
+=======
+        <td>Bmw</td>
+        <td>negru</td>
+>>>>>>> 33fa58e6f2cd6549fe09fa1708cc178ce4aedd6c
         <td>
           <a href="">
             <span class="label label-success">
@@ -430,6 +705,7 @@
 	
     <div class="row">
       <div class="col-md-3">
+<<<<<<< HEAD
         <h2>Editeaza Model</h2>
         <form action="" method="">
           <div class="form-group">
@@ -444,6 +720,22 @@
 		  <div class="form-group">
             <label for="attribute2">Tipatelefon</label>
             <input type="text" class="form-control" id="attribute2" placeholder="Tiptelefon">
+=======
+        <h2>Editeaza Marca</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">Id_Marca</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Id_Marca">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Nume_Marca</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="Nume_Marca">
+          </div>
+		  
+		  <div class="form-group">
+            <label for="attribute2">Tipautomobil</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="Tipautomobil">
+>>>>>>> 33fa58e6f2cd6549fe09fa1708cc178ce4aedd6c
           </div>
 		  
 		   <div class="form-group">
@@ -458,6 +750,7 @@
 
 
       <div class="col-md-3 col-md-offset-6">
+<<<<<<< HEAD
         <h2>Editeaza Model</h2>
         <form action="" method="">
           <div class="form-group">
@@ -485,6 +778,46 @@
         
         <table class="table table-bordered table-striped">
      
+=======
+        <h2>Culoarea</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">Marca</label>
+            <input type="text" class="form-control" id="Marca" placeholder="Marca">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Culoarea</label>
+            <input type="text" class="form-control" id="Culoarea" placeholder="Culoarea">
+          </div>
+          <button type="submit" class="btn btn-success">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Culoarea</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="http://media.bestauto.ro/small/20151008/1758/d4317942f0af38b85e8bd326560ad273/ford-Focus-3037971.jpg" class="img-thumbnail"/>
+      </div>
+      <div class="col-md-10">
+        <h1>Marca</h1>
+        <p>Culoarea,Greutate</p>
+        <h3>Sub resource</h3>
+        <table class="table table-bordered table-striped">
+          <tr>
+            <th>Attribute 5</th>
+            <th>Attribute 6</th>
+          </tr>
+          <tr>
+            <td>Lorem ipsum</td>
+            <td>Lorem</td>
+          </tr>
+          <tr>
+            <td>Lorem ipsum dolor</td>
+            <td>Sir</td>
+>>>>>>> 33fa58e6f2cd6549fe09fa1708cc178ce4aedd6c
           </tr>
         </table>
       </div>
@@ -492,6 +825,7 @@
   </div>
 
   <hr/>
+<<<<<<< HEAD
 	
 	 <!-- /resources3-->
   <div class="container">
@@ -681,6 +1015,13 @@
     <footer class="footer">
       <p class="text-muted rightwards">Project AWJ 2015-2016</p>
       <p class="text-muted pull-right">Pascu Alexandru Constantin, 331AA</p>
+=======
+
+  <div class="container">
+    <footer class="footer">
+      <p class="text-muted pull-left">AWJ Base Project &copy; 2015-2016</p>
+      <p class="text-muted pull-right">Pascu Alexandru, 331AA</p>
+>>>>>>> 33fa58e6f2cd6549fe09fa1708cc178ce4aedd6c
     </footer>
   </div>
 
@@ -690,4 +1031,9 @@
   <script src="js/app.js"></script>
 </body>
 </html>
+<<<<<<< HEAD
 
+=======
+Status API Training Shop Blog About Pricing
+© 2015 GitHub, Inc. Terms Privacy Security Contact Help
+>>>>>>> 33fa58e6f2cd6549fe09fa1708cc178ce4aedd6c
