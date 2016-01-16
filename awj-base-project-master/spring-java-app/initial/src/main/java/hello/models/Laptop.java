@@ -3,14 +3,14 @@ package hello.models;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Automobil {
+public class Laptop {
 
  private int Id;
  private String Nume;
 
-  public Automobil() {}
+  public Laptop() {}
 
-  public Automobil(int id, String nume)
+  public Laptop(int id, String nume)
   {
       this.Id=id;
       this.Nume=nume;

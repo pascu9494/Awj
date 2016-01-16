@@ -38,7 +38,7 @@ public class Marca extends Automobil
 
      public void setAn(String An)
      {
-      this.An=an;
+      this.An=An;
      }
 
      }

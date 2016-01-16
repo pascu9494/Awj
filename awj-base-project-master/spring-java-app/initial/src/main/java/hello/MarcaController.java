@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
 import java.util.List;
 import java.util.ArrayList;
@@ -73,7 +74,7 @@ MarcaController()
       @RequestMapping(value="/Marca/{Tipautomobil}", method = RequestMethod.GET)
       public ResponseEntity show2(@PathVariable("Tipautomobil") String Tipautomobil) {
       for(Marca a : this.Marca) {
-      if(a.getTipautomobil().equals(Tipautomobil)) {
+      if(a.getTipAutomobil().equals(Tipautomobil)) {
         return new ResponseEntity<Marca>(a, new HttpHeaders(), HttpStatus.OK);
       }
      }
@@ -89,6 +90,7 @@ MarcaController()
       }
       return new ResponseEntity<String>(null, new HttpHeaders(), HttpStatus.NOT_FOUND);
 
+	  
     }
 
 
@@ -121,8 +123,7 @@ MarcaController()
 
 
      @RequestMapping(value="/Marca/", method = RequestMethod.POST)
-  	 public ResponseEntity create() {
-	 Marca a4=new Marca(4,"v40","2006","Volvo");
+  	 public ResponseEntity create(@RequestBody Marca a4) {
 	 Marca.add(a4);
 
      return new ResponseEntity<Marca>(a4, new HttpHeaders(), HttpStatus.OK);
@@ -146,5 +147,5 @@ MarcaController()
            }
 
 
-}
+
 
